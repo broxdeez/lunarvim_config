@@ -62,7 +62,6 @@ lvim.plugins = {
       "rcarriga/nvim-notify",
     }
   },
-  { "Exafunction/codeium.vim" },
   { 'nvim-tree/nvim-web-devicons' },
 
 

@@ -9,6 +9,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "css",
   "yaml",
   "lua",
+  "go"
 }
 local formatters = require "lvim.lsp.null-ls.formatters"
 formatters.setup {
@@ -16,7 +17,12 @@ formatters.setup {
     name = "black",
     extra_args = { "--line-length", 80, "--preview" },
     filetypes = { "python" }
-  } }
+  },
+  {
+    name = "gofmt",
+    filetypes = { "go" }
+  }
+}
 local linters = require "lvim.lsp.null-ls.linters"
 linters.setup { { command = "flake8", args = { "--ignore", "E203" }, filetypes = { "python" } } }
 
