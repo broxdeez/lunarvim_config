@@ -63,5 +63,7 @@ lvim.plugins = {
     }
   },
   { "Exafunction/codeium.vim" },
+  { 'nvim-tree/nvim-web-devicons' },
+
 
 }
